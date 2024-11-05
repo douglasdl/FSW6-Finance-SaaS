@@ -31,13 +31,27 @@ Create the Database migrations:
 npx prisma migrate dev --name init_db
 ```
 
+Install the Shadcn:
+
+```sh
+pnpm dlx shadcn@latest init
+```
+
+Install Shadcn components:
+
+```sh
+pnpm dlx shadcn@latest add button
+
+```
+
 Start the project:
 
 ```sh
 npm run dev
 ```
 
-- [Figma]()
+- [Figma](https://www.figma.com/design/AotbJaT5gvfQUJBH599qEZ/FSW-Finance?node-id=264-1627&node-type=canvas&t=3IKgbF89QuNx8l56-0)
+- [Notion](https://narrow-beach-a00.notion.site/Full-Stack-Week-6-0-Guia-do-Evento-f29407dc306545eaa3c803d29e148358)
 
 ## Database
 
@@ -51,6 +65,7 @@ npm run dev
 ## Technologies / Packages
 
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn](https://ui.shadcn.com/)
 
 ## VS Code Extensions
 
