@@ -44,6 +44,13 @@ pnpm dlx shadcn@latest add button
 
 ```
 
+Install Clerk:
+
+```sh
+npm i @clerk/nextjs
+npm i @clerk/themes
+```
+
 Start the project:
 
 ```sh
@@ -66,6 +73,7 @@ npm run dev
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Shadcn](https://ui.shadcn.com/)
+- [Clerk](https://clerk.com/) - Alternative option -> [Next Auth](https://next-auth.js.org/)
 
 ## VS Code Extensions
 
