@@ -51,6 +51,14 @@ npm i @clerk/nextjs
 npm i @clerk/themes
 ```
 
+Install Githooks: Husky and Lint-Staged:
+
+```sh
+npm i -D husky
+npm i -D lint-staged
+npx husky init
+```
+
 Start the project:
 
 ```sh
@@ -74,6 +82,8 @@ npm run dev
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Shadcn](https://ui.shadcn.com/)
 - [Clerk](https://clerk.com/) - Alternative option -> [Next Auth](https://next-auth.js.org/)
+- [Husky](https://github.com/typicode/husky#readme)
+- [Lint Staged](https://github.com/lint-staged/lint-staged#readme)
 
 ## VS Code Extensions
 
