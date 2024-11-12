@@ -31,6 +31,18 @@ Create the Database migrations:
 npx prisma migrate dev --name init_db
 ```
 
+Create/Apply the database and migration in a new development database:
+
+```sh
+npx prisma migrate dev
+```
+
+Create/Apply the database and migration in a new production database:
+
+```sh
+npx prisma migrate deploy
+```
+
 Install the Shadcn:
 
 ```sh
@@ -98,3 +110,11 @@ npm run dev
 ## Others
 
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+## Docker
+
+Start the container:
+
+```sh
+docker-compose up -d
+```
