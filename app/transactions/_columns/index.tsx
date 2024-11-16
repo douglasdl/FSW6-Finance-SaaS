@@ -4,6 +4,28 @@ import { Transaction } from "@prisma/client";
 import { ColumnDef } from "@tanstack/react-table";
 import { TransactionTypeBadge } from "../_components/type-badge";
 
+const TRANSACTION_CATEGORY_LABELS = {
+  EDUCATION: "Educação",
+  ENTERTAINMENT: "Entretenimento",
+  FOOD: "Alimentação",
+  HEALTH: "Saúde",
+  HOUSING: "Moradia",
+  OTHER: "Outros",
+  SALARY: "Salário",
+  TRANSPORTATION: "Transporte",
+  UTILITY: "Utilidades",
+};
+
+const TRANSACTION_PAYMENT_METHOD_LABELS = {
+  BANK_TRANSFER: "Transferêcnia Bancária",
+  BANK_SLIP: "Boleto Bancário",
+  CASH: "Dinheiro",
+  CREDIT_CARD: "Cartão de Crédito",
+  DEBIT_CARD: "Cartão de Débito",
+  OTHER: "Outros",
+  PIX: "Pix",
+};
+
 export const transactionColumns: ColumnDef<Transaction>[] = [
   {
     accessorKey: "name",
@@ -19,10 +41,14 @@ export const transactionColumns: ColumnDef<Transaction>[] = [
   {
     accessorKey: "category",
     header: "Categoria",
+    cell: ({ row: { original: transaction } }) =>
+      TRANSACTION_CATEGORY_LABELS[transaction.category],
   },
   {
     accessorKey: "paymentMethod",
     header: "Método de Pagamento",
+    cell: ({ row: { original: transaction } }) =>
+      TRANSACTION_PAYMENT_METHOD_LABELS[transaction.paymentMethod],
   },
   {
     accessorKey: "date",
