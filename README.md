@@ -10,6 +10,7 @@ Install the dependencies:
 
 ```sh
 npm i prisma
+npm i @prisma/client
 npm i -D prettier prettier-plugin-tailwindcss
 ```
 
@@ -43,6 +44,12 @@ Create/Apply the database and migration in a new production database:
 npx prisma migrate deploy
 ```
 
+Open the Prisma Studio:
+
+```sh
+npx prisma studio
+```
+
 Install the Shadcn:
 
 ```sh
@@ -53,7 +60,9 @@ Install Shadcn components:
 
 ```sh
 pnpm dlx shadcn@latest add button
-
+pnpm dlx shadcn@latest add table
+pnpm add @tanstack/react-table
+pnpm dlx shadcn@latest add badge
 ```
 
 Install Clerk:
